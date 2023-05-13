@@ -1,0 +1,316 @@
+
+    * {
+        box-sizing: border-box;
+    }
+    :root
+    {
+        scroll-behavior: smooth;
+        --background-color:hsl(240deg,80%,100%);
+        --text-color:hsl(240deg,95%,8%);
+        --intro-color:hsl(0 0% 85%);
+        --font-size-small:.5rem;
+        --font-size-regular:1rem;
+        --font-size-large:1.5rem;
+        --font-size-xl:2rem;
+        --shadow-color:hsl(225,10%,83%);
+        --shadow-color-dark:hsl(225,10%,63%);
+        --spacing-regular:16px;
+        --spacing-small:calc(var(--spacing-regular)/2);
+    }
+
+    html {
+        scroll-behavior: smooth;
+        /* smooth scrooling effect */
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        border-top: 4px solid black;
+    }
+
+    .oldmenu {
+        transition: scroll .4s;
+        padding: 14px;
+        /* padding-left: 160px; */
+        /* text-align: center; */
+        /* position: sticky; */
+        top: 0;
+        border-bottom: 3px solid black;
+        background-color: rgb(191 125 255 / 50%);
+        }
+  
+     .card header h1{
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    header nav a {
+        /* padding: px; */
+        margin: 6px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-size: var(--font-size-regular);
+    }
+
+    header nav a:hover {
+        text-decoration: underline;
+        color:black;
+        /* filter: drop-shadow(0px 0px 50px  rgb(191 125 255 / 40%)); */
+        transform: translatey(var(--spacing-small));
+    }
+    #oldmenus
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        /* font-size: var(--font-size-large); */
+    }
+    body.dark-theme{
+        --background-color:hsl(240deg,80%,5%);
+        --text-color:hsl(240deg,95%,100%);
+        --intro-color:hsl(0 0% 18%);
+    }
+    .hideen {
+        overflow-x: hidden;
+    }
+
+    .photo {
+        width: 300px;
+        height: 300px;
+        border-radius: 50px;
+        margin-top: 10px;
+        margin-left: 82px;
+        /*  drop shadow allow us to give the shadow to the image the condition is the image has to be transparent  neithe we can inset to the image nor we can do spread the radius in it */
+        filter: drop-shadow(0px 0px 5px  rgb(191 125 255 / 40%));
+    }
+
+    .pho {
+        color: white;
+    }
+
+    .intro {
+        text-align: center;
+        background-color: #1d1c1c;
+     
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    img {
+        width: 20px;
+        padding: 5px;
+        padding-top: -19px;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .roller {
+        color: white;
+        font-size: 20px;
+    }
+
+    #dynamictext {
+        color: rgb(191 125 255 / 37%);
+    }
+
+    #forms label {
+        font-weight: 600;
+        display: block;
+    }
+    #forms input,
+    #forms textarea,
+    #forms button {
+        width: 100%;
+        resize: none;
+    }
+
+    form#forms {
+        border: 2px solid black;
+        max-width: 400px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    #menus {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+        background-color: transparent;
+        border-radius: 8px;
+        margin-right: auto;
+    }
+
+    nav#menus ul li>a {
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+    nav#menus ul {
+        list-style: none;
+    }
+
+    nav#menus ul>li {
+        padding: 10px;
+        font-size: 30px;
+
+    }
+
+    nav#menus ul li>a:hover {
+        text-decoration: underline;
+    }
+
+    #newbutton {
+        background-color: transparent;
+        border: none;
+        font-size: xx-large;
+
+    }
+    #Tech
+   {
+    /* margin-left: 20%; */
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    
+
+    /* place-content: center; */
+    /* place-items: center; */
+    gap: 1rem;
+
+   }
+   .card
+   {
+    border: 1px solid black;
+    padding: 1rem;
+    box-shadow: 0px 0px 6px 5px var(--shadow-color);
+    width: 100%;
+    transition: transform .4s ease-in, box-shadow .5s ease-in-out;
+   }
+   .card:hover
+   {
+    box-shadow: 0px 0px 8px 9px var(--shadow-color);
+    transform: translatey(calc(-1*var(--spacing-small)));
+
+   }
+   section{
+    scroll-margin-top:50px ;
+    /* scroll-behavior: smooth;  */
+ 
+   }
+   .card ul{
+    list-style: none;
+    text-align: center;
+    position: relative;
+     right: 20px;
+   }
+   .card header h1 {
+   text-align: center;
+   }
+   .map{
+    width: 70%;
+    position: relative;
+    /* right: 100%; */
+    width: 800px;
+    border-radius: 10%;
+   }
+   #contackme{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+   .newmap {
+width: 100%;
+   }
+
+  
+    @media (width<500px) {
+        .oldmenu {
+            display: none;
+        }
+
+        #menu {
+            display: block;
+            margin-left: auto;
+
+        }
+        #menus {
+            display: revert;
+            height: 0;
+            overflow: hidden;
+            position: fixed;
+            z-index: 1;
+            background-color: white;
+            width: 100%;
+            transition: height 0.8s;
+
+
+        }
+
+    }
+
+    @media (width<=400px) {
+        article .photo {
+            width: 100%;
+        }
+
+        .contatainer {
+            width: 100%;
+        }
+    }
+
+    @media(prefers-color-scheme: dark) {
+        body {
+           
+        --background-color:hsl(240deg,80%,5%);
+        --text-color:hsl(240deg,95%,100%);
+        --intro-color:hsl(0 0% 18%);
+        }
+        body.light-theme
+        {
+            --background-color:hsl(240deg,80%,100%);
+            --text-color:hsl(240deg,95%,8%);
+            --intro-color:hsl(0 0% 85%);
+        }
+    }
+    @media (width<646px) {
+       #Tech{
+            display: flex;
+            flex-direction: column;
+       }
+       #contackme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .map{
+        width: 100vw;
+    }
+    }

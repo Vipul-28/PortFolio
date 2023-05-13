@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+
+<body>
+    <div class="hideen">
+
+  
+    <nav id="menus">
+        <button id="newbutton">&times;</button>
+        <ul>
+            <li> <a href="#about">About Me</a></li>
+            <li> <a href="#qualification">Qualification</a></li>
+            <li> <a href="#hobbies">Hobbies</a></li>
+            <li><a href="#Tech">Technical Part</a></li>
+            <li> <a href="#contackme">Contact Me</a></li>
+        </ul>
+    </nav>
+    <header class="oldmenu">
+       
+            <nav id="oldmenus">
+                <section>
+                    <a href="#about">About Me</a>
+                    <a href="#qualification">Qualification</a>
+                    <a href="#hobbies">Hobbies</a>
+                    <a href="#Tech">Technical Part</a>
+                    <a href="#contackme">Contact Me</a>
+                </section>
+                <section>
+                    <button id="theme-switcher"></button>
+                </section>
+            </nav>
+        
+    </header>
+    <button id="menu">Menu</button>
+    <main class="conatainer">
+        <article class="intro">
+            <img class="photo" src="/me1-removebg-preview.png" alt="">
+            <h2 class="pho">Hi,I'm Vipul</h2>
+            <p class="roller">I Am <span id="dynamictext"></span></p>
+            <p>
+                <a href="#"> <img src="/Instagram_logo_2016.svg.webp" alt=""></a>
+                <a href="#"><img src="/OIP (3).jpg" alt=""></a>
+                <a href="#"><img src="/OIP (4).jpg" alt=""></a>
+            </p>
+        </article>
+        <!-- airticle tag basicalyy start with the heading and after that all the tags what ever content insiside it it describe its compleyetey its is not necessary -->
+        <section  id="about">
+            <h2>About Me</h2>
+            <div style="text-align: center;">
+                <p>Hi there this is Vipul Dongre currently i am pursuing Bachelor of Technology in Computer Science from Indore Institute of Science and Technology</p>
+                <p>As a second year student i am famliar with technologies like HTML, CSS, JS, React Js, Tailwind Css, React Native</p>
+                <p>About my Programing skills I am very well Famliar with C,CPP,Core JAVA and currently. I am working on Advance JAVA.</p>
+                <p>I used to solve the Programing problem on Code Chef in order to increase my logic building  with CPP and I also achieved 1889 global rank STARTER 73 </p>
+            </div>
+        </section>
+        <!-- section is used to make the section if your website have different section than you should use sectiion tag -->
+        <section id="qualification">
+            <h2>Qualifications</h2>
+            <ol start="number">
+                <li>Currently i am pursuing second year of B.Tech in Computer Science</li>
+                <li>I had done my Higher Secondary as well as Senior Secondary from Sant Kanwar Ram School Gwalior</li>
+                <li>I Secured 89% in Higher Secondary as well as Senior Secondary Examination</li>
+
+            </ol>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>PLayingGuitar</li>
+                <li>Chess</li>
+                <li>Basketball</li>
+                <li>Exploring New Things</li>
+            </ul>
+        </section>
+        <h2>Technologies</h2>
+        <section id="Tech">
+            <section class="card">
+                <header>
+                    <h1>Languages</h1>
+                </header>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>C</li>
+                    <li>CPP</li>
+                    <li>JAVA</li>
+
+                </ul>
+            </section>
+            <section class="card">
+                <header>
+                    <h1>Frame Works</h1>
+                </header>
+                <ul>
+                    <li>Tailwind CSS</li>
+                    <li>React js</li>
+                    <li>React Native</li>
+                    <li>jQuery</li>
+
+                </ul>
+            </section>
+            <section class="card">
+                <header>
+                    <h1>Database</h1>
+                </header>
+                <ul>
+                    <li>MY SQL</li>
+                    <li>MONGO DB</li>
+                </ul>
+            </section>
+            <!-- <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                    </tr>
+                    <tr> -->
+                        <!-- <td>CSS</td>
+                        <td>RAILS</td>
+                        <td>MONGO DR</td>
+                    </tr>
+                    <tr>
+                        <td>JS</td>
+                        <td>ASP.NET</td>
+                        <td>POSTGRES</td>
+                    </tr>
+                </tbody>
+            </table> -->
+            </section>
+            <br>
+            <div class="newmap">
+                <section id="contackme">
+                    <form id="forms" action="https://formspree.io/f/xvonblaw" method="post">
+                        <h1>Contact Me</h1>
+                        <label for="firstname">Firstname</label>
+                        <input type="text" required autocomplete="off" id="firstname">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" required autocomplete="off" id="lastname">
+                        <label for="textarea">Message</label>
+                        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+                        <button id="buttons" type="submit">send</button>
+                    </form>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d920.3949349847619!2d75.82730782920407!3d22.669452599070816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fc148e698459%3A0xc45ec6e4d4abf539!2sIndira%20Memorial%20Hospital!5e0!3m2!1sen!2sin!4v1679759030602!5m2!1sen!2sin" width="100%" height="400" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </div>
+    </main>
+    <br>
+    <footer>
+        Made With Wizard Ghost
+    </footer>
+</div>
+</body>
+<script src="/menu.js"></script>
+<script src="/index.js"></script>
+<script src="/theme.js"></script>
+
+
+
+</html>
